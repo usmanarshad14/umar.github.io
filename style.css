@@ -1,0 +1,464 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar{
+  background-color: #000;
+}
+.navbar a {
+  color: #dd3333;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px #dd3333;
+}
+.navbar a:hover {
+  color: #dd3333;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px #fff;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url("images/particle.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content-container {
+  position: relative;
+  z-index: 1;
+  padding: 50px;
+  color: #fff;
+}
+.content-container .text-center {
+  margin-top: 130px;
+}
+.content-container .text-center h1 {
+  font-size: 55px;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px #dd3333;
+}
+.content-container .text-center p {
+  font-size: 25px;
+}
+.content-container .text-center button {
+  box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333;
+  padding: 5px;
+  margin: 5px;
+  background-color: #dd3333;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #dd3333;
+  border-radius: 30px;
+  width: 140px;
+}
+.content-container .text-center button:hover {
+  box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333, 0 0 50px #dd3333,
+    0 0 100px #dd3333, 0 0 200px #dd3333;
+}
+
+/* /////////servicea///////// */
+.Service1 {
+text-align: center;
+transition: all 0.7s linear;
+
+}
+.Service1 .card {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
+  
+}
+.Service1 .card:hover,
+.card:active {
+  transform: translateY(-3rem);
+
+}
+.Service-icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: rab(221, 51, 51, 0.2);
+  display: inline-block;
+  margin-left: 103px;
+  margin-top: 30px;
+  border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  padding: 10px;
+  position: relative;
+  background-color: rgb(221, 51, 51, 0.3);
+  animation: water-wave 3s linear infinite;
+}
+.Service-icon::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  background: transparent;
+  border: 1px solid #dd3333;
+  animation: water-wave 3s linear infinite;
+}
+
+@keyframes water-wave {
+  0% {
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  }
+  50% {
+    border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
+
+  }
+  100% {
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  }
+
+  
+}
+.card h5 {
+  color: #444444;
+  font-weight: bold;
+}
+.card p {
+  color: #747474;
+}
+
+/* ////////////// Oder logo ////////// */
+.logo-order {
+  background-color: #444444;
+  justify-content: center;
+  height: 440px;
+}
+ .logo-content  {
+  color: #fff;
+  margin-top: 60px;
+}
+.logo-content h2  {
+ color: #dd3333;
+}
+.logo-content h1  {
+ font-size: 24px;
+ }
+ .logo-content button  {
+  box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333;
+  padding: 5px;
+  margin: 5px;
+  background-color: #dd3333;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #dd3333;
+  border-radius: 30px;
+  width: 140px;
+ }
+ .logo-content button:hover  {
+  box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333, 0 0 50px #dd3333,
+    0 0 100px #dd3333, 0 0 200px #dd3333;
+ }
+ .image-content img {
+  margin-top: 68px;
+  margin-left: -15px;
+ }
+ /* ////////////gallery/////////// */
+ .bg-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-image:hover {
+  transform: scale(1.1);
+}
+
+.gallery {
+  margin: 15px;
+}
+
+/* /////////////ferlancing ///////// */
+/* 
+.section-freelancing {
+  background-image: url("images/particle.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  position: relative;
+  transition: all 0.7s linear;
+  text-align: center;
+}
+
+.section-freelancing .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  opacity: 0.7;
+}
+
+.section-freelancing .container {
+  position: relative;
+}
+
+.section-freelancing h2 {
+  font-size: 3rem;
+}
+
+.section-freelancing span {
+  color: #dd3333;
+}
+
+.section-freelancing h2,
+.section-freelancing p {
+
+  color: #fff;
+  margin-bottom: 1.8rem;
+}
+.viste-button{
+  box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333;
+  padding: 5px;
+  margin: 5px;
+  background-color: #dd3333;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #dd3333;
+  border-radius: 30px;
+  width: 11rem;
+}
+.viste-button:hover{
+  box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333, 0 0 50px #dd3333,
+    0 0 100px #dd3333, 0 0 200px #dd3333;
+} */
+
+  /* Custom styling for testimonials */
+  .carousel-inner {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .testimonial {
+    background-color: #444444;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial p {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .testimonial strong {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #dd3333;
+  }
+
+  /* Carousel Control Icons */
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #dd3333;
+    box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333;
+    border-radius: 20px;
+   
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon:hover {
+    box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333, 0 0 50px #dd3333,
+    0 0 100px #dd3333, 0 0 200px #dd3333;
+   
+  }
+
+  /* Active carousel item */
+  .carousel-item.active {
+    background-color: #dd3333;
+    color: #fff;
+  }
+
+  /* Testimonial Carousel Text Color */
+  .carousel-item p, .carousel-item strong {
+    color: #fff;
+  }
+
+  /* Center text vertically in the carousel control */
+  .carousel-control-prev, .carousel-control-next {
+    align-items: center;
+  }
+
+  /* Center the carousel controls horizontally */
+  .carousel-control-prev, .carousel-control-next {
+    transform: translateX(0);
+  }
+
+
+  /* ////////terminal section////// */
+  .section_padding_130 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    
+}
+  .faq_area {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(160deg, #444444 55%, #fff 0%);
+}
+
+.faq-accordian {
+    position: relative;
+    z-index: 1;
+}
+.faq-accordian .card {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+}
+.faq-accordian .card:last-child {
+    margin-bottom: 0;
+}
+.faq-accordian .card .card-header {
+    background-color: #ffffff;
+    padding: 0;
+    border-bottom-color: #ebebeb;
+}
+.faq-accordian .card .card-header h6 {
+    cursor: pointer;
+    padding: 1.75rem 2rem;
+    color: #dd3333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.faq-accordian .card .card-header h6 span {
+    font-size: 1.5rem;
+}
+.faq-accordian .card .card-header h6.collapsed {
+    color: #dd3333;
+}
+.faq-accordian .card .card-header h6.collapsed span {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.faq-accordian .card .card-body {
+    padding: 1.75rem 2rem;
+}
+.faq-accordian .card .card-body p:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 575px) {
+    .support-button p {
+        font-size: 14px;
+    }
+}
+
+.support-button i {
+    color: #dd3333;
+    font-size: 1.25rem;
+}
+@media only screen and (max-width: 575px) {
+    .support-button i {
+        font-size: 1rem;
+    }
+}
+
+.support-button a {
+    text-transform: capitalize;
+    color: #2ecc71;
+}
+@media only screen and (max-width: 575px) {
+    .support-button a {
+        font-size: 13px;
+    }
+}
+
+/* Custom Styles for FAQ Section */
+  .faq_area {
+    background-color: #f8f9fa; /* Set background color for the FAQ section */
+    padding: 80px 0; /* Adjust padding as needed */
+  }
+
+  .section_heading h3 {
+    color: #dd3333; /* Set text color for the section heading */
+  }
+
+  .line {
+    background-color: #dd3333; /* Set color for the line */
+    height: 3px; /* Adjust line height as needed */
+    width: 60px; /* Adjust line width as needed */
+    margin: 15px auto; /* Center the line */
+  }
+
+  .faq-accordian {
+    margin-top: 30px; /* Adjust margin as needed */
+  }
+
+  .card {
+    border: 1px solid #dee2e6; /* Set border color for each FAQ card */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+  }
+
+  .card-header {
+    background-color: #dd3333; /* Set background color for the card header */
+    color: #fff; /* Set text color for the card header */
+    border: none; /* Remove border for the card header */
+  }
+
+  .card-body {
+    background-color: #ffffff; /* Set background color for the card body */
+  }
+
+  .support-button {
+    margin-top: 30px; /* Adjust margin as needed */
+  }
+
+  .support-button i {
+    color: #dd3333; /* Set color for the support button icon */
+    font-size: 24px; /* Adjust font size as needed */
+    margin-right: 5px; /* Add space between icon and text */
+  }
+
+  .support-button a {
+    color: #dd3333; /* Set color for the support button text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+  }
+
+  .support-button a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+
+
+
+
+
+
+ /* General styles for all screens */
+
+/* Media query for screens up to 767 pixels wide (typical mobile devices) */
+@media (max-width: 767px) {
+  /* Styles for mobile devices go here */
+.card {
+  margin-top: 45px;
+}
+ .logo-order {
+  height: 730px;
+ }
+ .image-content img {
+  margin-left: 0px;
+ }
+ .content-container .text-center h1 {
+  font-size: 33px;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px #dd3333;
+}
+
+  
+}
