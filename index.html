@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -28,6 +29,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,300&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-"
+    crossorigin="anonymous"
+  />
     <!-- Custom styles -->
     <link rel="stylesheet" href="style.css" />
 
@@ -58,19 +65,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="service.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
+                <a class="nav-link" href="contact.html">Contact us</a>
               </li>
             </ul>
           </div>
@@ -85,9 +92,9 @@
     <div class="content-container container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1>Graphic Design Agency</h1>
-          <p>We Design. We Develop. We Share.</p>
-          <button>READ MORE</button>
+          <h1  data-aos="fade-left">Graphic Design Agency</h1>
+          <p data-aos="fade-right">We Design. We Develop. We Share.</p>
+          <button data-aos="fade-up">READ MORE</button>
         </div>
       </div>
     </div>
@@ -95,12 +102,12 @@
     <br />
 
     <!-- Services Section -->
-    <section class="container mt-5 Service1">
-      <!-- <h2 class="text-center mb-4">Our Services</h2> -->
+    <section class="container mt-5 Service1" data-aos="zoom-in">
+      <h2 class="text-center mb-4" style="visibility: hidden;">Our Services</h2>
 
       <div class="row">
         <!-- Service 1 -->
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="flip-left">
           <div class="card">
             <ion-icon name="rocket-outline" class="Service-icon"></ion-icon>
             <div class="card-body">
@@ -123,14 +130,14 @@
               <p class="card-text">
                 Brand identity is a set of visual components that represents
                 ideas, allows customers to remember a brand and distinguish it
-                from dozens of others.
+                from dozens of others.<b style="visibility: hidden;">usman</b>
               </p>
             </div>
           </div>
         </div>
 
         <!-- Service 3 -->
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="flip-right">
           <div class="card">
             <ion-icon name="laptop-outline" class="Service-icon"></ion-icon>
             <div class="card-body">
@@ -152,20 +159,20 @@
         <div class="row">
           <div class="col-md-6">
             <div class="image-content">
-              <img src="images/logoes.jpg" alt="Image" class="img-fluid" />
+              <img src="images/logoes.jpg" alt="Image" class="img-fluid" data-aos="zoom-in" style="    margin-top: -65px;"/>
             </div>
           </div>
           <div class="col-md-6">
             <div class="logo-content">
-              <h2>Our Service</h2>
+              <h2 data-aos="fade-left"  style="    margin-top: -90px;">Our Service</h2>
               <hr />
-              <h1>ARABIC INVITATION CARD DESIGN</h1>
-              <p>
+              <h1 data-aos="fade-right">ARABIC INVITATION CARD DESIGN</h1>
+              <p data-aos="zoom-in">
                 Are you looking for Arabic Wedding Invitation Cards, Greeting
                 cards, Birthday cards, Identity cards, New Year’s and newborn
                 baby Cards? If yes then welcome to My Gig!
               </p>
-              <button>GET ORDER</button>
+              <button data-aos="fade-up">GET ORDER</button>
             </div>
           </div>
         </div>
@@ -176,10 +183,17 @@
     <section>
       
 <div class="container">
-  <div class="py-5">
-   <h1 class="text-center display-3" style="color: #444444;"> MY GALLERY </h1>
-   <hr class="text-center w-25" style="color: #dd3333; border-color: #dd3333;">
-  </div>
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8 col-lg-6">
+        <!-- Section Heading-->
+        <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+            <h3 style=" box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333; background-color: #dd3333; color: #fff;"  data-aos="zoom-in">My Gallery</h3>
+            <p style="color: #444444;"  data-aos="fade-up">Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+            <div class="line"></div>
+        </div>
+    </div>
+</div>
+<br>
   <div class="row no-gutters gallerys">
    <div class="col-lg-4 col-md-4 col-sm-6 col-12"> 
     <a href="images/particle.jpg" target="_blank">
@@ -225,20 +239,20 @@
         <div class="row">
           <div class="col-md-6">
             <div class="image-content">
-              <img src="images/websites.jpg" alt="Image" class="img-fluid" />
+              <img src="images/websites.jpg" alt="Image" class="img-fluid" data-aos="zoom-in" style="    margin-top: -65px;" />
             </div>
           </div>
           <div class="col-md-6">
             <div class="logo-content">
-              <h2>Our Service</h2>
+              <h2 data-aos="fade-left" style="    margin-top: -90px;">Our Service</h2>
               <hr />
-              <h1>ARABIC INVITATION CARD DESIGN</h1>
-              <p>
+              <h1 data-aos="fade-right">ARABIC INVITATION CARD DESIGN</h1>
+              <p data-aos="zoom-in">
                 Are you looking for Arabic Wedding Invitation Cards, Greeting
                 cards, Birthday cards, Identity cards, New Year’s and newborn
                 baby Cards? If yes then welcome to My Gig!
               </p>
-              <button>GET ORDER</button>
+              <button data-aos="fade-up">GET ORDER</button>
             </div>
           </div>
         </div>
@@ -247,21 +261,18 @@
     <br>
     <br>
 
-    <!-- /////////ferlancing ////// -->
-    <!-- <section class="section section-freelancing">
-      <div class="overlay"></div>
-      <div class="container">
-        <h2>I am <span>available</span> for freelancing</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
-          voluptates similique nulla vitae natus
-        </p>
-        <a href="#" class="btn"><button class="viste-button">VISITE ON FIVER</button></a>
-      </div>
-    </section> -->
+  
     <div class="container mt-5">
-      <h2 class="text-center mb-4">Our Clients Feedback</h2>
-      <hr class="text-center w-25" style="color: #dd3333; border-color: #dd3333;">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-lg-6">
+            <!-- Section Heading-->
+            <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <h3 style=" box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333; background-color: #dd3333; color: #fff;"  data-aos="zoom-in">Our Clients Feedback</h3>
+                <p style="color: #444444;"  data-aos="fade-up">Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
       <br>
       <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -278,7 +289,23 @@
             <div class="testimonial">
               <img src="images/logoes.jpg" alt="Client Image 2" class="img-fluid rounded-circle mb-3" style="height: 100px; width: 100px">
               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
-              <p><strong>Jane Doe</strong></p>
+              <p><strong>Usman</strong></p>
+            </div>
+          </div>
+           <!-- Testimonial 3 -->
+           <div class="carousel-item">
+            <div class="testimonial">
+              <img src="images/logoes.jpg" alt="Client Image 2" class="img-fluid rounded-circle mb-3" style="height: 100px; width: 100px">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+              <p><strong>Zohan</strong></p>
+            </div>
+          </div>
+           <!-- Testimonial 4 -->
+           <div class="carousel-item">
+            <div class="testimonial">
+              <img src="images/logoes.jpg" alt="Client Image 2" class="img-fluid rounded-circle mb-3" style="height: 100px; width: 100px">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+              <p><strong>Umar</strong></p>
             </div>
           </div>
           <!-- Add more testimonials as needed -->
@@ -306,8 +333,8 @@
           <div class="col-12 col-sm-8 col-lg-6">
               <!-- Section Heading-->
               <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                  <h3 style=" box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333;"><span>Frequently </span> Asked Questions</h3>
-                  <p style="color: #fff;">Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+                  <h3 style=" box-shadow: 0 0 5px #dd3333, 0 0 25px #dd3333; color: #fff;"  data-aos="zoom-in"><span>Frequently </span> Asked Questions</h3>
+                  <p style="color: #fff;"  data-aos="fade-up">Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
                   <div class="line"></div>
               </div>
           </div>
@@ -315,47 +342,50 @@
       <div class="row justify-content-center">
           <!-- FAQ Area-->
           <div class="col-12 col-sm-10 col-lg-8">
-              <div class="accordion faq-accordian" id="faqAccordion">
-                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                      <div class="card-header" id="headingOne">
-                          <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How can I install this app?<span class="lni-chevron-up"></span></h6>
-                      </div>
-                      <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                          <div class="card-body">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
-                              <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
-                          </div>
-                      </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #dd3333;">
+                    Logo & Identity Design?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>The logo is the face of your Brand. We have the most talented and experienced logo designers, who approach every logo design project with an inspired dedication with a complete thought process. Being a focus based quality branding agency in Pakistan, we have been designing logos and brand identities for many reputed companies and that’s something we are good at.
                   </div>
-                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                      <div class="card-header" id="headingTwo">
-                          <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">The apps isn't installing?<span class="lni-chevron-up"></span></h6>
-                      </div>
-                      <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                          <div class="card-body">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
-                              <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                      <div class="card-header" id="headingThree">
-                          <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Contact form isn't working?<span class="lni-chevron-up"></span></h6>
-                      </div>
-                      <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#faqAccordion">
-                          <div class="card-body">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
-                              <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
-                          </div>
-                      </div>
-                  </div>
+                </div>
               </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #dd3333;">
+                    Print Design?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>our printed marketing material can make a significant impact on your company’s image. We provide quality print design services to make sure that your business cards, letterheads, envelopes, brochures, and other marketing materials stand out in every sales meeting, face-to-face encounters and direct mailings.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #dd3333;">
+                    Brand & Stationary Design?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>We offer a complete range of quality brand identity design services, stationery design services, company rebranding services, brand guidelines services, and branding consultation. Defining your brand’s identity is key in marketing, therefore our dedicated team ensures that they build out your brand visually. Buzz Interactive is a creative brand agency you will ever need to stand out your brand image.
+                  </div>
+                </div>
+              </div>
+            </div>
               <!-- Support Button-->
-              <div class="support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <!-- <div class="support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
                   <i class="lni-emoji-sad"></i>
                   <p class="mb-0 px-2">Can't find your answers?</p>
                   <a href="#"> Contact us</a>
-              </div>
+              </div> -->
           </div>
       </div>
   </div>
@@ -365,27 +395,60 @@
 
 
 
-
-    <section>
-      <div class="container-fluid">
-        <footer class="row">
-          <div class="col-md-4">
-            <h4>Column 1</h4>
-            <p>Content for column 1 goes here.</p>
-          </div>
-          <div class="col-md-4">
-            <h4>Column 2</h4>
-            <p>Content for column 2 goes here.</p>
-          </div>
-          <div class="col-md-4">
-            <h4>Column 3</h4>
-            <p>Content for column 3 goes here.</p>
-          </div>
-        </footer>
-      </div>
-    </section>
     
-    <br><br><br><br>
+
+
+   
+         <!-- Footer -->
+         <div class="footer">
+          <div class="footer__builder">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                 
+                  <ul class="social-icons">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <!-- Add more social media icons as needed -->
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <div
+                    class="copyright-text align-center scrolla-element-anim-1 scroll-animate"
+                    data-animate="active"
+                  >
+                    © 2024 <strong style="color: #dd3333;">Husnain</strong>. All rights reserved
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <div
+                    class="copyright-text align-right scrolla-element-anim-1 scroll-animate"
+                    data-animate="active"  
+                  >
+                    Developed by <strong style="color: #dd3333;">Usman Arshad</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+ 
 
 <!-- Add this JavaScript code after including Bootstrap -->
 <script>
